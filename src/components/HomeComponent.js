@@ -78,13 +78,7 @@ class Home extends Component {
           <div className=" icon col-12 text-center">
             <Raise height={10} timing={200}>
               <IconContext.Provider
-                value={{
-                  style: {
-                    margin: "10px",
-                    fontSize: "34px",
-                    color: "rgb(0, 123, 255)",
-                  },
-                }}
+              value={{ className: 'github' }}
               >
                 <a href="https://github.com/joykirat18" target="_blank">
                   <FaGithub />

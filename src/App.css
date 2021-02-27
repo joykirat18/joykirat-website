@@ -342,3 +342,9 @@ canvas{
   vertical-align: bottom;
 }
 
+.github{
+  margin: 10px;
+  font-size: 34px;
+  color: rgb(0, 123, 255);
+
+}
