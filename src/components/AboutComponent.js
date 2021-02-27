@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
-import { Card, CardBody, CardHeader } from "reactstrap";
-import Canvas from '../shared/Particles';
 
 class About extends Component {
   componentDidMount() {
@@ -59,7 +57,7 @@ class About extends Component {
               electronic
             </span>
           </div>
-          <div className="tagcloud col-12 col-md-6 tag" ></div>
+          <div className="tagcloud col-12 col-md-6 tag"></div>
         </div>
       </div>
     );

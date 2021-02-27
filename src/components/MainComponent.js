@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './MenuComponent';
 import Home from './HomeComponent';
-import Footer from './FooterComponent';
+// import Footer from './FooterComponent';
 import DishDetail from './DishDetailComponent';
 import Header from './HeaderComponent';
 import About from './AboutComponent';
@@ -10,9 +10,9 @@ import About from './AboutComponent';
 // import { COMMENTS } from '../shared/comments';
 // import { LEADERS } from '../shared/leaders';
 // import { PROMOTIONS } from '../shared/promotions';
-import Contact from './ContactComponent';
+// import Contact from './ContactComponent';
 import {Switch, Route, Redirect} from 'react-router-dom';
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 
 class Main extends Component {
 
@@ -31,15 +31,15 @@ class Main extends Component {
   }
 
   render() {
-      const HomePage = () => {
-          return(
-              <Home dish = {this.state.dishes.filter((dish) => dish.featured)[0]}
-                  promotion = {this.state.promotions.filter((promo) => promo.featured)[0]}
-                  comment = {this.state.comments.filter((comment) => comment.featured)[0]}
-                  leader = {this.state.leaders.filter((leader) => leader.featured)[0]}
-              />
-          )
-      }
+      // const HomePage = () => {
+      //     return(
+      //         <Home dish = {this.state.dishes.filter((dish) => dish.featured)[0]}
+      //             promotion = {this.state.promotions.filter((promo) => promo.featured)[0]}
+      //             comment = {this.state.comments.filter((comment) => comment.featured)[0]}
+      //             leader = {this.state.leaders.filter((leader) => leader.featured)[0]}
+      //         />
+      //     )
+      // }
     const DishWithId = ({match}) => {
         return(
             <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId, 10))[0]} 

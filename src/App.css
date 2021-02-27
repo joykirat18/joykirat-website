@@ -54,9 +54,6 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
-#root {
-  /* height: inherit; */
-}
 .home-intro{
   margin-top: 22vh;
   margin-bottom: 5vh;
@@ -339,7 +336,7 @@ body {
 }
 canvas{
   display: block;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 .github{

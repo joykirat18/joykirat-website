@@ -51,7 +51,7 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-	   <Canvas width="2880" height="1576" style="width: 1440px;right: 0;height: 788px;"/>
+	   <Canvas width="2880" height="1576" />
         <div className="row row-content">
         
           <div className="col-12 col-md home-intro">
@@ -80,7 +80,7 @@ class Home extends Component {
               <IconContext.Provider
               value={{ className: 'github' }}
               >
-                <a href="https://github.com/joykirat18" target="_blank">
+                <a href="https://github.com/joykirat18" rel = "noreferrer" target="_blank">
                   <FaGithub />
                 </a>
               </IconContext.Provider>
@@ -106,7 +106,7 @@ class Home extends Component {
                   },
                 }}
               >
-                <a href="https://www.instagram.com/joykirat18/" target="_blank">
+                <a href="https://www.instagram.com/joykirat18/" rel = "noreferrer" target="_blank">
                   <AiOutlineInstagram />
                 </a>
               </IconContext.Provider>
@@ -132,7 +132,7 @@ class Home extends Component {
                   },
                 }}
               >
-                <a href="mailto:joykirat19166@iiitd.ac.in" target="_blank">
+                <a href="mailto:joykirat19166@iiitd.ac.in" rel = "noreferrer" target="_blank">
                   <SiGmail />
                 </a>
               </IconContext.Provider>

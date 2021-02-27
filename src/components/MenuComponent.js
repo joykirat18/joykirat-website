@@ -55,43 +55,7 @@ class Menu extends Component {
 		</div>
 	);
 
-      {/* <div className="container">
-	  <Particles />
-        <div className=" main row">
-		
-          <div className=" text-center col-12">
-            <span className="d-flex align-items-center justify-content-center project-heading">
-              Projects
-            </span>
-            <br />
-          </div>
-          <div className="flip-card col-4 text-center">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <p>Project 1</p>
-              </div>
-              <div class="flip-card-back">
-              </div>
-            </div>
-          </div><div className="flip-card col-4 text-center">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <p>Project 1</p>
-              </div>
-              <div class="flip-card-back">
-              </div>
-            </div>
-          </div><div className="flip-card col-4 text-center">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <p>Project 1</p>
-              </div>
-              <div class="flip-card-back">
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div> */}
+    
 
   }
 }
