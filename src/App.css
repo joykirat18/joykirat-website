@@ -1,38 +1,344 @@
-.App {
+
+
+.app{
+  font-family: sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 80%;
+  background:transparent;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
+}
+
+.row-content {
+  margin:0px auto;
+  /* padding: 50px 0px 50px 0px; */
+  min-height:300px;
+}
+
+
+
+
+address{
+  font-size:80%;
+  margin:0px;
+  color:#0f0f0f;
+}
+
+.navbar-dark {
+  background-color: #070707;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+	box-sizing: border-box;
+	background: #1D1D1D;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  /* background: ra; */
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#root {
+  /* height: inherit; */
+}
+.home-intro{
+  margin-top: 22vh;
+  margin-bottom: 5vh;
+  text-align: center;
+
+}
+.intro{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 400%;
+  color : white;
+  
+  
+}
+.nav{
+  padding :0 10px;
+  font-size: 'Roboto', sans-serif;
+  font-size : 200%;
+  color: dodgerblue;
+}
+.active{
+  /* color: #0b639e; */
+  font-weight: bold;
+}
+
+
+.hi{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  color : white;
+
+  
+}
+
+.description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  color : white;
+  /* font-size: 110%; */
+  /* margin: 10vh 44vh; */
+}
+
+
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+  left : 50%;
+	transform: translate(-50%, -50%) perspective(600px) rotateY(20deg) rotateX(10deg);
+	background: #0f4c75;
+	transform-style: preserve-3d;
+	width: 700px;
+	height: 350px;
+	border-radius: 10px;
+}
+
+.wrapper .shape {
+	background: #3282b8;
+	border-radius: 10px;
+	width: 700px;
+	height: 350px;
+	transform: translateZ(50px) translateX(-17px) scale(0.85);
+	opacity: 0.8;
+}
+
+.wrapper .shape2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 750px;
+	height: 400px;
+	transform: translateZ(150px) translateX(-22px) translateY(-26px) scale(0.55);
+	border: 3px solid white;
+	background: #bbe1fa;
+	opacity: 0.3;
+	border-radius: 8px;
+}
+
+.wrapper p {
+  text-align: center;
+  margin: 10px;
+  
+}
+
+.aboutus-heading{
+  z-index: 1;
+  font-optical-sizing: 1;
+  color: black;
+  font-size: 200%;
+  margin-top: 200px;
+  vertical-align: middle;
+}
+
+.project-heading{
+  
   color: white;
+  font-size: 200%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  font-weight: bold;
+  
+}
+.aboutus-info{
+  font-size: 200%;
+  color: black;
+  font-size: 100%;
+  text-align: center;
+  /* margin-top: 200px; */
+  
+}
+.skill{
+  margin-top: 27vh;
+}
+.tag{
+  margin-top: 7vh;
+  margin-left: 0vh;
+  margin-right: 0;
+}
+.skill-info{
+  font-family: 'Roboto', sans-serif;
+  font-size: 200%;
+  color: white;
+  font-size: 120%;
+  /* text-align: center; */
+  margin-top: 200px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.skill-heading{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 250%;
+  color: white;
+  margin-top: 200px;
+  vertical-align: middle;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  margin-top: 25vh;
+  margin-bottom: 0px;
+  
 }
+.font-icon{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10vh;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 75%;
+  height: 100%;
+  margin-left: 55px;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.logo{
+  color: dodgerblue;
+}
+
+.tagcloud {
+  font-size: 30px;
+}
+
+.tagcloud--item {
+  padding: 2px 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tagcloud--item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+.light .tagcloud--item {
+  color: #fff;
+}
+
+.light .tagcloud--item:hover {
+  background-color: rgba(247, 241, 241, 0.1);
+  border: 1px solid #fff;
+}
+
+.tagcloud {
+  font-size: 16px;
+}
+
+.tagcloud--item {
+  padding: 2px 4px;
+  background-color: transparent;
+  color : dodgerblue;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.tagcloud--item:hover {
+  background-color: rgba(255, 248, 248, 0.1);
+  border: 1px solid #333;
+  
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+.light .tagcloud--item {
+  color: #fff;
+}
+.tsparticles{
+  padding: 0;
+	/* background: $background */
+}
+.light .tagcloud--item:hover {
+  background-color: rgba(255, 254, 254, 0.1);
+  border: 1px solid #fff;
+}
+
+.container {
+  position: relative;
+  max-width: 97%;
+  /* max-height: 90%; */
+}
+.container canvas, .overlay {
+  position: absolute;
+
+}
+.tsparticles{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+canvas{
+  display: block;
+  vertical-align: bottom;
+}
+
