@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Canvas from "../shared/ParticleStatic"
 import Particles from "react-particles-js";
 
 class About extends Component {
@@ -43,7 +44,7 @@ class About extends Component {
   render() {
     return (
       <div className="container">
-        <Particles />
+        <Canvas />
         <div className="row row-content">
           <div className="skill col-12 col-md-6">
             <span className=" skill-heading">Skills & Experience</span>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Canvas from '../shared/Particles';
+import Canvas from '../shared/ParticleStatic';
 
 
 class Menu extends Component {

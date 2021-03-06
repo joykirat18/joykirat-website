@@ -43,16 +43,16 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                             <NavItem>
-                                <NavLink className="nav-link"to='/home'><span className="fa nav fa-lg"></span> Home</NavLink>
+                                <NavLink className="nav-link"to='/home'>Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/aboutus'><span className="fa nav fa-lg"></span>Skills</NavLink>
+                                <NavLink className="nav-link" to='/aboutus'>Skills</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/menu'><span className="fa nav fa-lg"></span>Project</NavLink>
+                                <NavLink className="nav-link"  to='/menu'>Project</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/contactus'><span className="fa nav fa-lg"></span> Contact Me</NavLink>
+                                <NavLink className="nav-link" to='/contactus'>Contact Me</NavLink>
                             </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
@@ -61,16 +61,7 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                {/* <Jumbotron> */}
-                    {/* <div className="container">
-                        <div className="row row-header">
-                            <div className="col-12 col-sm-6">
-                                <h1>Ristorante con Fusion</h1>
-                                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                            </div>
-                        </div>
-                    </div> */}
-                {/* </Jumbotron> */}
+
                 <Modal isOpen = {this.state.isModalOpen} toggle = {this.toggleModal}>
                     <ModalHeader toggle = {this.toggleModal}>Login</ModalHeader>
                     <ModalBody>

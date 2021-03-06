@@ -39,7 +39,7 @@ address{
 
 body {
 	box-sizing: border-box;
-	background: #1D1D1D;
+	background: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,7 +64,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 400%;
-  color : white;
+  color : #163172;
   
   
 }
@@ -72,19 +72,16 @@ body {
   padding :0 10px;
   font-size: 'Roboto', sans-serif;
   font-size : 200%;
-  color: dodgerblue;
+  color: #1e56a0;
 }
-.active{
-  /* color: #0b639e; */
-  font-weight: bold;
-}
+
 
 
 .hi{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 150%;
-  color : white;
+  color : #163172;
 
   
 }
@@ -93,7 +90,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 150%;
-  color : white;
+  color : #163172;
   /* font-size: 110%; */
   /* margin: 10vh 44vh; */
 }
@@ -152,7 +149,7 @@ body {
 
 .project-heading{
   
-  color: white;
+  color: #163172;
   font-size: 200%;
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -178,7 +175,7 @@ body {
 .skill-info{
   font-family: 'Roboto', sans-serif;
   font-size: 200%;
-  color: white;
+  color: #163172;
   font-size: 120%;
   /* text-align: center; */
   margin-top: 200px;
@@ -189,7 +186,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 250%;
-  color: white;
+  color: #163172;
   margin-top: 200px;
   vertical-align: middle;
 }
@@ -269,7 +266,7 @@ body {
 
 .tagcloud--item:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -293,7 +290,7 @@ body {
 .tagcloud--item {
   padding: 2px 4px;
   background-color: transparent;
-  color : dodgerblue;
+  color : #1e56a0;
   border: 1px solid transparent;
   cursor: pointer;
   font-size: 25px;
@@ -301,7 +298,7 @@ body {
 
 .tagcloud--item:hover {
   background-color: rgba(255, 248, 248, 0.1);
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   
   opacity: 1 !important;
   z-index: 100 !important;

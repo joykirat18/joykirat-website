@@ -78,7 +78,13 @@ class Home extends Component {
           <div className=" icon col-12 text-center">
             <Raise height={10} timing={200}>
               <IconContext.Provider
-              value={{ className: 'github' }}
+              value={{
+                  style: {
+                    margin: "10px",
+                    fontSize: "40px",
+                    color: "#0f4c75",
+                  },
+                }}
               >
                 <a href="https://github.com/joykirat18" rel = "noreferrer" target="_blank">
                   <FaGithub />
@@ -90,7 +96,7 @@ class Home extends Component {
                 style: {
                   margin: "10px",
                   fontSize: "10px",
-                  color: "rgb(255,250,250)",
+                  color: "#bbe1fa",
                 },
               }}
             >
@@ -102,7 +108,7 @@ class Home extends Component {
                   style: {
                     margin: "10px",
                     fontSize: "40px",
-                    color: "rgb(245,133,41)",
+                    color: "#0f4c75",
                   },
                 }}
               >
@@ -116,7 +122,7 @@ class Home extends Component {
                 style: {
                   margin: "10px",
                   fontSize: "10px",
-                  color: "rgb(255,250,250)",
+                  color: "#bbe1fa",
                 },
               }}
             >
@@ -128,7 +134,7 @@ class Home extends Component {
                   style: {
                     margin: "10px",
                     fontSize: "35px",
-                    color: "rgb(255,250,0)",
+                    color: "#0f4c75",
                   },
                 }}
               >
@@ -142,7 +148,7 @@ class Home extends Component {
                 style: {
                   margin: "10px",
                   fontSize: "10px",
-                  color: "rgb(255,250,250)",
+                  color: "#bbe1fa",
                 },
               }}
             >
@@ -154,7 +160,7 @@ class Home extends Component {
                   style: {
                     margin: "10px",
                     fontSize: "40px",
-                    color: "rgb(255,0,0)",
+                    color: "#0f4c75",
                   },
                 }}
               >
@@ -166,7 +172,7 @@ class Home extends Component {
                 style: {
                   margin: "10px",
                   fontSize: "10px",
-                  color: "rgb(255,250,250)",
+                  color: "#bbe1fa",
                 },
               }}
             >
@@ -178,7 +184,7 @@ class Home extends Component {
                   style: {
                     margin: "10px",
                     fontSize: "40px",
-                    color: "rgb(8,160,233)",
+                    color: "#0f4c75",
                   },
                 }}
               >
@@ -190,7 +196,7 @@ class Home extends Component {
                 style: {
                   margin: "10px",
                   fontSize: "10px",
-                  color: "rgb(255,250,250)",
+                  color: "#bbe1fa",
                 },
               }}
             >
@@ -202,7 +208,7 @@ class Home extends Component {
                   style: {
                     margin: "10px",
                     fontSize: "40px",
-                    color: "rgb(59,89,152)",
+                    color: "#0f4c75",
                   },
                 }}
               >
@@ -214,7 +220,7 @@ class Home extends Component {
                 style: {
                   margin: "10px",
                   fontSize: "10px",
-                  color: "rgb(255,250,250)",
+                  color: "#bbe1fa",
                 },
               }}
             >
@@ -226,7 +232,7 @@ class Home extends Component {
                   style: {
                     margin: "10px",
                     fontSize: "45px",
-                    color: "rgb(0, 123, 255)",
+                    color: "#0f4c75",
                   },
                 }}
               >
