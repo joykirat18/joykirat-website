@@ -26,70 +26,75 @@
     -->
     <title>Joykirat Singh</title>
     <style>
-      html,body{
-  background:#000;
-  margin:0;
-}
-      .centered{
-  width:400px;
-  height:400px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  /* background:#000; */
-  filter: blur(10px) contrast(20);
-}
-.blob-1,.blob-2{
-  width:70px;
-  height:70px;
-  position:absolute;
-  background:#febe55;
-  border-radius:50%;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%);
-}
-.blob-1{
-  left:20%;
-  background:#febe55;
-  animation:osc-l 2.5s ease infinite;
-}
-.blob-2{
-  left:80%;
-  animation:osc-r 2.5s ease infinite;
-  background:blue;
-}
-@keyframes osc-l{
-  0%{left:20%;}
-  50%{left:50%;}
-  100%{left:20%;}
-}
-@keyframes osc-r{
-  0%{left:80%;}
-  50%{left:50%;}
-  100%{left:80%;}
-}
-      </style>
+      html,
+      body {
+        background: #000;
+        margin: 0;
+      }
+      .centered {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* background:#000; */
+        filter: blur(10px) contrast(20);
+      }
+      .blob-1,
+      .blob-2 {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        background: #febe55;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .blob-1 {
+        left: 20%;
+        background: #febe55;
+        animation: osc-l 2.5s ease infinite;
+      }
+      .blob-2 {
+        left: 80%;
+        animation: osc-r 2.5s ease infinite;
+        background: blue;
+      }
+      @keyframes osc-l {
+        0% {
+          left: 20%;
+        }
+        50% {
+          left: 50%;
+        }
+        100% {
+          left: 20%;
+        }
+      }
+      @keyframes osc-r {
+        0% {
+          left: 80%;
+        }
+        50% {
+          left: 50%;
+        }
+        100% {
+          left: 80%;
+        }
+      }
+    </style>
   </head>
   <body>
-    
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="root"></div>
-    <div class = "centered">
-      <div class = "blob-1"></div>
-      <div class = "blob-2"></div>
+    <div class="centered">
+      <div class="blob-1"></div>
+      <div class="blob-2"></div>
     </div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
     <script type="text/javascript" src="./dist/TagCloud.min.js"></script>
   </body>
 </html>

@@ -34,16 +34,7 @@ class Canvas extends Component {
             color: {
               value: "#FEBE55",
             },
-            // shape: {
-            //   type: "circle",
-            //   stroke: {
-            //     width: 0,
-            //     color: "#000000",
-            //   },
-            //   polygon: {
-            //     nb_sides: 5,
-            //   },
-            // },
+            
             opacity: {
               value: 0.5,
               random: false,
@@ -54,16 +45,7 @@ class Canvas extends Component {
                 sync: false,
               },
             },
-            // size: {
-            //   value: 3,
-            //   random: true,
-            //   anim: {
-            //     enable: false,
-            //     speed: 10,
-            //     size_min: 0.1,
-            //     sync: false,
-            //   },
-            // },
+            
             line_linked: {
               enable: true,
               distance: 150,

@@ -70,13 +70,13 @@ function Menu(props) {
                   would "kill" him before he died in Minneapolis police custody.
                   This web typography shows his breathing, and on pressing the
                   letters, the breathing action changes. The
-                  <a
+                  <a style={{ color: "#febe55" }}
                     href="https://web-typo.vercel.app/#"
                     rel="noreferrer"
                     target="_blank"
                   >
                     link
-                  </a>{" "}
+                  </a>
                   to the website.
                 </p>
               </div>

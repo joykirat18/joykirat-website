@@ -10,8 +10,8 @@ const Raise = ({ height = 0, timing = 150, children }) => {
     config: {
       mass: 1,
       tension: 400,
-      friction: 15
-    }
+      friction: 15,
+    },
   });
 
   React.useEffect(() => {

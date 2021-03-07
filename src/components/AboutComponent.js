@@ -21,6 +21,8 @@ class About extends Component {
       "Linux",
       "PhotoShop",
       "Illustrator",
+      "C++",
+      "C#"
     ];
     const options = {
       radius: 300,
