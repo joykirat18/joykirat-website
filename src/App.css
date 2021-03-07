@@ -1,32 +1,27 @@
-
-
-.app{
-  font-family: 'Roboto', sans-serif;
+.app {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   height: 80%;
-  background:transparent;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.row-header{
-  margin:0px auto;
-  padding:0px auto;
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
 }
 
 .row-content {
-  margin:0px auto;
+  margin: 0px auto;
   /* padding: 50px 0px 50px 0px; */
-  min-height:400px;
+  min-height: 400px;
 }
 
-
-
-
-address{
-  font-size:80%;
-  margin:0px;
-  color:#0f0f0f;
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
 }
 
 .navbar-dark {
@@ -34,13 +29,12 @@ address{
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 body {
-	box-sizing: border-box;
-	background: #000;
-	font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  background: #000;
+  font-family: "Montserrat", sans-serif;
 }
 
 html,
@@ -54,94 +48,87 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
-.home-intro{
+.home-intro {
   margin-top: 22vh;
   margin-bottom: 5vh;
   text-align: center;
-
 }
-.intro{
-  font-family: 'Roboto', sans-serif;
+.intro {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 400%;
-  color : white; 
-  
+  color: white;
 }
 
-.nav{
-  padding :0 10px;
-  font-size: 'Roboto', sans-serif;
-  font-size : 200%;
+.nav {
+  padding: 0 10px;
+  font-size: "Roboto", sans-serif;
+  font-size: 200%;
   color: dodgerblue;
 }
-.active{
+.active {
   /* color: #0b639e; */
   font-weight: bold;
 }
 
-
-.hi{
-  font-family: 'Roboto', sans-serif;
+.hi {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 150%;
-  color : white;
-
-  
+  color: white;
 }
 
-.description{
-  font-family: 'Roboto', sans-serif;
+.description {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 150%;
-  color : #FEBE55;
+  color: #febe55;
   /* font-size: 110%; */
   /* margin: 10vh 44vh; */
 }
 
-
-
 .wrapper {
-	position: absolute;
-	top: 50%;
-  left : 50%;
-	transform: translate(-50%, -50%) perspective(600px) rotateY(20deg) rotateX(10deg);
-	background: #0f4c75;
-	transform-style: preserve-3d;
-	width: 700px;
-	height: 350px;
-	border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) perspective(600px) rotateY(20deg)
+    rotateX(10deg);
+  background: #0f4c75;
+  transform-style: preserve-3d;
+  width: 700px;
+  height: 350px;
+  border-radius: 10px;
 }
 
 .wrapper .shape {
-	background: #3282b8;
-	border-radius: 10px;
-	width: 700px;
-	height: 350px;
-	transform: translateZ(50px) translateX(-17px) scale(0.85);
-	opacity: 0.8;
+  background: #3282b8;
+  border-radius: 10px;
+  width: 700px;
+  height: 350px;
+  transform: translateZ(50px) translateX(-17px) scale(0.85);
+  opacity: 0.8;
 }
 
 .wrapper .shape2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	width: 750px;
-	height: 400px;
-	transform: translateZ(150px) translateX(-22px) translateY(-26px) scale(0.55);
-	border: 3px solid white;
-	background: #bbe1fa;
-	opacity: 0.3;
-	border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 750px;
+  height: 400px;
+  transform: translateZ(150px) translateX(-22px) translateY(-26px) scale(0.55);
+  border: 3px solid white;
+  background: #bbe1fa;
+  opacity: 0.3;
+  border-radius: 8px;
 }
 
 .wrapper p {
   text-align: center;
   margin: 10px;
-  
 }
 
-.aboutus-heading{
+.aboutus-heading {
   z-index: 1;
   font-optical-sizing: 1;
   color: black;
@@ -150,44 +137,40 @@ body {
   vertical-align: middle;
 }
 
-.project-heading{
-
-  font-family: 'Roboto', sans-serif;
+.project-heading {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 200%;
   margin-top: 3vh;
   margin-bottom: 5vh;
   font-weight: bold;
-  
 }
-.aboutus-info{
+.aboutus-info {
   font-size: 200%;
   color: black;
   font-size: 100%;
   text-align: center;
   /* margin-top: 200px; */
-  
 }
-.skill{
+.skill {
   margin-top: 27vh;
 }
-.tag{
+.tag {
   margin-top: 7vh;
   margin-left: 0vh;
   margin-right: 0;
 }
-.skill-info{
-  font-family: 'Roboto', sans-serif;
+.skill-info {
+  font-family: "Roboto", sans-serif;
   font-size: 200%;
   color: white;
   font-size: 120%;
   /* text-align: center; */
   margin-top: 200px;
-  
 }
 
-.skill-heading{
-  font-family: 'Roboto', sans-serif;
+.skill-heading {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 250%;
   color: white;
@@ -195,18 +178,16 @@ body {
   vertical-align: middle;
 }
 
-.icon{
+.icon {
   margin-top: 25vh;
   margin-bottom: 0px;
-  
 }
-.font-icon{
+.font-icon {
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .flip-card {
-  
   background-color: transparent;
   width: 100%;
   height: 400px;
@@ -232,7 +213,8 @@ body {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   border-radius: 15px;
   position: absolute;
   width: 100%;
@@ -255,7 +237,7 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
-.logo{
+.logo {
   color: yellow;
 }
 
@@ -296,7 +278,7 @@ body {
 .tagcloud--item {
   padding: 2px 4px;
   background-color: transparent;
-  color : dodgerblue;
+  color: dodgerblue;
   border: 1px solid transparent;
   cursor: pointer;
   font-size: 25px;
@@ -305,7 +287,7 @@ body {
 .tagcloud--item:hover {
   background-color: rgba(255, 248, 248, 0.1);
   border: 1px solid #333;
-  
+
   opacity: 1 !important;
   z-index: 100 !important;
 }
@@ -313,9 +295,9 @@ body {
 .light .tagcloud--item {
   color: #fff;
 }
-.tsparticles{
+.tsparticles {
   padding: 0;
-	/* background: $background */
+  /* background: $background */
 }
 .light .tagcloud--item:hover {
   background-color: rgba(255, 254, 254, 0.1);
@@ -327,134 +309,127 @@ body {
   max-width: 97%;
   /* max-height: 90%; */
 }
-.container canvas, .overlay {
+.container canvas,
+.overlay {
   position: absolute;
-
 }
-.tsparticles{
+.tsparticles {
   position: absolute;
   width: 100%;
   height: 100%;
-
 }
-canvas{
+canvas {
   display: block;
   /* vertical-align: bottom; */
 }
-.github{
+.github {
   margin: 1px;
   font-size: 34px;
   color: rgb(0, 123, 255);
 }
 
-.github2{
+.github2 {
   margin: 1px;
   font-size: 34px;
   color: rgb(0, 123, 255);
   align-items: center;
 }
 
-
-
-div.container a
-{
-    color: dodgerblue;
-    text-decoration: none;
-    margin: 0px 10px;
-    padding: 5px 0px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+div.container a {
+  color: dodgerblue;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 5px 0px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 }
-div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
-{
-    padding: 0;
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FEBE55;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+div.topBotomBordersOut a:before,
+div.topBotomBordersOut a:after {
+  padding: 0;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #febe55;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-div.topBotomBordersOut a:before
-{
-    top: 0px;
-    transform: translateY(10px);
+div.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
 }
 
-div.topBotomBordersOut a:after
-{
-    bottom: 0px;
-    transform: translateY(-10px);
+div.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
 }
 
-div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
+div.topBotomBordersOut a:hover:before,
+div.topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 @-webkit-keyframes swing {
   15% {
-      -webkit-transform: translateY(5px);
-      transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
   }
   30% {
-      -webkit-transform: translateY(-5px);
-      transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
   }
   50% {
-      -webkit-transform: translateY(3px);
-      transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
   }
   65% {
-      -webkit-transform: translateY(-3px);
-      transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   80% {
-      -webkit-transform: translateY(2px);
-      transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes swing {
   15% {
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
   }
   30% {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   50% {
-      -webkit-transform: translateY(7px);
-      transform: translateY(7px);
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
   }
   65% {
-      -webkit-transform: translateY(-7px);
-      transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
   }
   80% {
-      -webkit-transform: translateY(5px);
-      transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
   }
   100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
-.swing{
+.swing {
   display: inline-block;
 }
-.swing:hover
-{
-  color: #FEBE55;
+.swing:hover {
+  color: #febe55;
   -webkit-animation: swing 2s ease;
   animation: swing 1s both;
   -webkit-animation-iteration-count: 1;
@@ -471,29 +446,32 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 }
 
 @keyframes spin {
-  0%  { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.contact-heading{
-  font-family: 'Roboto', sans-serif;
+.contact-heading {
+  font-family: "Roboto", sans-serif;
   color: white;
   padding-top: 90px;
   padding-left: 50px;
   /* padding-bottom: 10px; */
   font-weight: 100;
   font-size: 42px;
-
 }
-.contact-info{
-  font-family: 'Roboto', sans-serif;
+.contact-info {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 42px;
   padding-left: 50px;
   padding-bottom: 60px;
   font-weight: 100;
 }
-.contact-info-2{
-  font-family: 'Roboto', sans-serif;
+.contact-info-2 {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 32px;
   text-align: center;
@@ -510,7 +488,6 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
   border-radius: 36px;
   position: absolute;
   cursor: pointer;
-
 }
 
 .cta {
@@ -526,7 +503,7 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 .number {
   height: 80px;
   width: 318px;
-  background-image: linear-gradient( #FEBE55, #FEBE55 );
+  background-image: linear-gradient(#febe55, #febe55);
   background-size: cover;
   color: black;
   font-size: 25px;
@@ -535,7 +512,7 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 .email {
   height: 80px;
   width: 318px;
-  background-image: linear-gradient( #FEBE55, #FEBE55 );
+  background-image: linear-gradient(#febe55, #febe55);
   background-size: cover;
   color: black;
   font-size: 15px;
@@ -547,68 +524,66 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
   transition: 1.2s;
 }
 
-.call-me-button{
+.call-me-button {
   padding: 0 150px;
 }
 
-.email-me-button{
+.email-me-button {
   padding: 9rem 150px;
 }
-.color-img{
+.color-img {
   padding: 36px 18px;
   width: 90%;
   border-radius: 15px;
 }
-.color-switch{
+.color-switch {
   padding-top: 30px;
   font-size: 45px;
   font-weight: 300;
-  
 }
-.color-switch-info{
+.color-switch-info {
   color: #000;
   padding: 30px;
   font-size: 20px;
 }
 
-.blm-img{
+.blm-img {
   padding: 30px 18px;
   width: 85%;
   border-radius: 15px;
 }
 
-.blm-switch{
-padding-top: 15px;
+.blm-switch {
+  padding-top: 15px;
   font-size: 35px;
   font-weight: 300;
 }
-.blm-info{
+.blm-info {
   color: #000;
   padding: 30px;
   font-size: 18px;
 }
 
-.su-info{
+.su-info {
   color: #000;
   padding: 30px;
   font-size: 22px;
 }
 
-.su-img{
+.su-img {
   padding: 30px 18px;
   width: 75%;
   border-radius: 15px;
 }
 
-.su-switch{
-/* padding-top: px; */
+.su-switch {
+  /* padding-top: px; */
   font-size: 35px;
   font-weight: 300;
 }
 
-.project-info{
+.project-info {
   font-size: 20px;
   color: white;
   text-align: center;
-
 }
