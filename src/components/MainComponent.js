@@ -55,11 +55,10 @@ class Main extends Component {
     }
     return (
       <div>
-     
       <Header />
       <Switch>
           <Route path = "/home" component = {() => <Home />} />
-          <Route exact path = "/menu" component = {() => <Menu dishes = {this.state.dishes} />} /> 
+          <Route exact path = "/menu" component = {() => <Menu />} /> 
           <Route path = "/menu/:dishId" component = {DishWithId} />
           <Route exact path = "/contactus" component = {Contact} />
           <Route exact path = "/aboutus" component = {() => <About leaders = {this.state.leaders} />} />

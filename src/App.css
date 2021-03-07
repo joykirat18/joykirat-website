@@ -74,14 +74,14 @@ body {
 .hi {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 170%;
   color: white;
 }
 
 .description {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 170%;
   color: #febe55;
   /* font-size: 110%; */
   /* margin: 10vh 44vh; */
@@ -153,7 +153,7 @@ body {
   /* margin-top: 200px; */
 }
 .skill {
-  margin-top: 27vh;
+  margin-top: 23vh;
 }
 .tag {
   margin-top: 7vh;
@@ -162,11 +162,21 @@ body {
 }
 .skill-info {
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+  /* font-size: 120%; */
+  /* text-align: center; */
+  margin-top: 200px;
+}
+
+.skill-info-2 {
+  font-family: "Roboto", sans-serif;
   font-size: 200%;
   color: white;
   font-size: 120%;
   /* text-align: center; */
-  margin-top: 200px;
+  
+
 }
 
 .skill-heading {
@@ -179,7 +189,7 @@ body {
 }
 
 .icon {
-  margin-top: 25vh;
+  margin-top: 22vh;
   margin-bottom: 0px;
 }
 .font-icon {
@@ -278,7 +288,7 @@ body {
 .tagcloud--item {
   padding: 2px 4px;
   background-color: transparent;
-  color: dodgerblue;
+  color: rgb(13, 134, 255);
   border: 1px solid transparent;
   cursor: pointer;
   font-size: 25px;
@@ -587,3 +597,63 @@ div.topBotomBordersOut a:hover:after {
   color: white;
   text-align: center;
 }
+.button {
+	
+	display: inline-flex;
+	height: 40px;
+	width: 150px;
+	border: 2px solid #FFFF;
+	margin: 20px 20px 20px 20px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .8em;
+	letter-spacing: 1.5px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-left: 15rem;
+	overflow: hidden;
+  }
+
+  #button-3 {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	
+  }
+  
+  #button-3 a {
+	position: relative;
+	transition: all .45s ease-Out;
+  }
+
+  .resume{
+	  
+	  color: white;
+  }
+  
+  #circle {
+	width: 0%;
+	height: 0%;
+	opacity: 0;
+	line-height: 40px;
+	border-radius: 50%;
+	background: #febe55;
+	position: absolute;
+	transition: all .5s ease-Out;
+	top: 20px;
+	left: 70px;
+  }
+  
+  #button-3:hover #circle {
+	width: 200%;
+	height: 500%;
+	opacity: 1;
+	top: -70px;
+	left: -70px;
+  }
+  
+  #button-3:hover a {
+	color: #2D3142;
+  }

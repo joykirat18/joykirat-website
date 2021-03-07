@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ReactLogo from "../images/remote-team.svg";
 import { Link } from "react-router-dom";
-
+import { fadeIn } from "react-animations";
+import Radium, { StyleRoot } from "radium";
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -76,6 +77,12 @@ class Contact extends Component {
     return errors;
   }
   render() {
+    const styles = {
+      fadeInDown: {
+        animation: "x 2s",
+        animationName: Radium.keyframes(fadeIn, "fadeIn"),
+      },
+    };
     const errors = this.validate(
       this.state.firstname,
       this.state.lastname,
@@ -83,8 +90,9 @@ class Contact extends Component {
       this.state.email
     );
     return (
-      <div className = "container">
-        <div className="row row-content">
+		<StyleRoot>
+      <div className="container " style={styles.fadeInDown}>
+        <div className="row row-content" >
           <div className="col-5 col-md-5">
             <p className="contact-heading">Have a Question for me?</p>
             <p className="contact-info">Contact Me</p>
@@ -101,12 +109,13 @@ class Contact extends Component {
             <img src={ReactLogo} alt="React Logo" />
           </div>
         </div>
-		<div className = "row">
-		<span className="contact-info-2">
-          Lets make some amazing projects together
-        </span>
-		</div>
+        <div className="row">
+          <span className="contact-info-2">
+            Lets make some amazing projects together
+          </span>
+        </div>
       </div>
+	  </StyleRoot>
     );
   }
 }

@@ -4,9 +4,8 @@ import Typewriter from "typewriter-effect";
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { BsFillXDiamondFill } from "react-icons/bs";
-import insta from "../images/instagram-color.svg";
-// import git from "../images/link.sv";
-
+import useSound from 'use-sound';
+import tap from '../sound/tap.wav';
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
@@ -19,40 +18,9 @@ import Raise from "./Raise.js";
 import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
+function Home(props){
 
-    this.state = {
-      offsetX: "",
-      offsetY: "",
-      friction: 1 / 32,
-    };
-    this._mouseMove = this._mouseMove.bind(this);
-  }
-  handleClick = (event) => {
-    alert(event);
-  };
-  componentDidMount() {
-    document.addEventListener("mousemove", this._mouseMove);
-  }
-  componentWillUnmount() {
-    document.removeEventListener("mousemove", this._mouseMove);
-  }
-  _mouseMove(e) {
-    let followX = window.innerWidth / 2 - e.clientX;
-    let followY = window.innerHeight / 2 - e.clientY;
-
-    let x = 0,
-      y = 0;
-    x += (-followX - x) * this.state.friction;
-    y += (followY - y) * this.state.friction;
-    this.setState({
-      offsetX: x,
-      offsetY: y,
-    });
-  }
-  render() {
+	const [play, { stop }] = useSound(tap,{volume : 15});
     const styles = {
       fadeInDown: {
         animation: "x 1.5s",
@@ -98,6 +66,7 @@ class Home extends Component {
               <Raise height={10} timing={200}>
                 <IconContext.Provider value={{ className: "github" }}>
                   <a
+				  	onMouseEnter = {play} onMouseLeave={stop}
                     href="https://github.com/joykirat18"
                     rel="noreferrer"
                     target="_blank"
@@ -128,6 +97,7 @@ class Home extends Component {
                   }}
                 >
                   <a
+				  onMouseEnter = {play} onMouseLeave={stop}
                     href="https://www.instagram.com/joykirat18/"
                     rel="noreferrer"
                     target="_blank"
@@ -158,6 +128,7 @@ class Home extends Component {
                   }}
                 >
                   <a
+				  onMouseEnter = {play} onMouseLeave={stop}
                     href="mailto:joykirat19166@iiitd.ac.in"
                     rel="noreferrer"
                     target="_blank"
@@ -187,7 +158,13 @@ class Home extends Component {
                     },
                   }}
                 >
+				<a
+				  onMouseEnter = {play} onMouseLeave={stop}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                   <AiFillYoutube />
+				  </a>
                 </IconContext.Provider>
               </Raise>
               <IconContext.Provider
@@ -211,7 +188,12 @@ class Home extends Component {
                     },
                   }}
                 >
-                  <AiOutlineTwitter />
+				<a
+				  onMouseEnter = {play} onMouseLeave={stop}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                  <AiOutlineTwitter /></a>
                 </IconContext.Provider>
               </Raise>
               <IconContext.Provider
@@ -235,7 +217,12 @@ class Home extends Component {
                     },
                   }}
                 >
-                  <AiFillFacebook />
+				<a
+				  onMouseEnter = {play} onMouseLeave={stop}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                  <AiFillFacebook /></a>
                 </IconContext.Provider>
               </Raise>
               <IconContext.Provider
@@ -259,7 +246,12 @@ class Home extends Component {
                     },
                   }}
                 >
-                  <AiFillLinkedin />
+				<a
+				  onMouseEnter = {play} onMouseLeave={stop}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                  <AiFillLinkedin /></a>
                 </IconContext.Provider>
               </Raise>
             </div>
@@ -268,6 +260,6 @@ class Home extends Component {
       </div>
     );
   }
-}
+
 
 export default Home;

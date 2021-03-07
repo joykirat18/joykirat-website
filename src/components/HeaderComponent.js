@@ -9,12 +9,21 @@ class Header extends Component {
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
+        this.handleKeyPress = this.handleKeyPress.bind(this);
         this.state = {
           isNavOpen: false,
           isModalOpen: false
         };
       }
-
+      componentDidMount(){
+            this.handleKeyPress(this);
+      }
+      handleKeyPress = (event) => {
+          alert(event.key);
+            if(event.key === '49'){
+                document.getElementById("home").click();
+            }
+      }
       toggleNav() {
         this.setState({
           isNavOpen: !this.state.isNavOpen
@@ -43,9 +52,9 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                             <NavItem>
-                                <NavLink className="nav-link topBotomBordersOut"to='/home'>
+                                <NavLink className="nav-link topBotomBordersOut" to='/home'>
                                 <div className = "container topBotomBordersOut">
-                                    <a>
+                                    <a id = "home" onKeyPress = {this.handleKeyPress}>
                                         HOME
                                     </a>
                                 </div>
@@ -53,21 +62,21 @@ class Header extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to='/aboutus'><div className = "container topBotomBordersOut">
-                                    <a>
+                                    <a id = "skill">
                                         SKILLS
                                     </a>
                                 </div></NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link"  to='/menu'><div className = "container topBotomBordersOut">
-                                    <a>
+                                    <a id = "project">
                                         PROJECTS
                                     </a>
                                 </div></NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to='/contactus'><div className = "container topBotomBordersOut">
-                                    <a>
+                                    <a id = "contact">
                                         CONTACT
                                     </a>
                                 </div></NavLink>

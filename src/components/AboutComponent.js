@@ -42,44 +42,53 @@ class About extends Component {
     };
     return (
       <div className="container">
-       <Canvas />
+        <Canvas />
         <StyleRoot>
-        <div className="row row-content" style={styles.fadeInDown}>
-          <div className="skill col-12 col-md-6">
-            <span className=" skill-heading">
-              <font className="swing">S</font>
-              <font className="swing">k</font>
-              <font className="swing">i</font>
-              <font className="swing">l</font>
-              <font className="swing">l</font>
-              <font className="swing">s</font>
-              <font className="swing">&nbsp;</font>
-              <font className="swing">&</font>
-              <font className="swing">&nbsp;</font>
-              <font className="swing">E</font>
-              <font className="swing">x</font>
-              <font className="swing">p</font>
-              <font className="swing">e</font>
-              <font className="swing">r</font>
-              <font className="swing">i</font>
-              <font className="swing">e</font>
-              <font className="swing">n</font>
-              <font className="swing">c</font>
-              <font className="swing">e</font>
-            </span>
-            <br />
-            <span className="skill-info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic
-            </span>
+          <div className="row row-content" style={styles.fadeInDown}>
+            <div className="skill col-12 col-md-6">
+              <span className=" skill-heading">
+                <font className="swing">S</font>
+                <font className="swing">k</font>
+                <font className="swing">i</font>
+                <font className="swing">l</font>
+                <font className="swing">l</font>
+                <font className="swing">s</font>
+                <font className="swing">&nbsp;</font>
+                <font className="swing">&</font>
+                <font className="swing">&nbsp;</font>
+                <font className="swing">E</font>
+                <font className="swing">x</font>
+                <font className="swing">p</font>
+                <font className="swing">e</font>
+                <font className="swing">r</font>
+                <font className="swing">i</font>
+                <font className="swing">e</font>
+                <font className="swing">n</font>
+                <font className="swing">c</font>
+                <font className="swing">e</font>
+              </span>
+              <br />
+              <span className="skill-info">
+                Hi, I am a second-year college student at Indraprastha Institute
+                of Information Technology Delhi. I am very passionate about
+                designing and web dev. I am currently working on some very cool
+                projects. <br></br>
+                <br></br>In the past, I have worked on javascript, python,
+                swift, React and also did a small intership in java
+                micro-services. I have recently started looking at open source
+                development and would like to be part of some big projects and
+                contribute to them.
+              </span>
+              <br></br>
+              <div class="button" id="button-3">
+                <div id="circle"></div>
+                <a className = "resume" href="https://docs.google.com/document/d/1WcXFwwUGgMWiHJ45fHJ2q954oDc4AQQX96n3YCgrQiE/edit?usp=sharing" rel="noreferrer"
+                      target="_blank">Resume</a>
+              </div>
+            </div>
+            <div className="tagcloud col-12 col-md-6 tag"></div>
           </div>
-          <div className="tagcloud col-12 col-md-6 tag"></div>
-        </div>
-		</StyleRoot>
+        </StyleRoot>
       </div>
     );
   }
