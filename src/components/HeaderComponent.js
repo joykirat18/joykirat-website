@@ -19,7 +19,7 @@ class Header extends Component {
             this.handleKeyPress(this);
       }
       handleKeyPress = (event) => {
-          alert(event.key);
+        //   alert(event.key);
             if(event.key === '49'){
                 document.getElementById("home").click();
             }
@@ -54,7 +54,7 @@ class Header extends Component {
                             <NavItem>
                                 <NavLink className="nav-link topBotomBordersOut" to='/home'>
                                 <div className = "container topBotomBordersOut">
-                                    <a id = "home" onKeyPress = {this.handleKeyPress}>
+                                    <a href = "#1" id = "home" onKeyPress = {this.handleKeyPress}>
                                         HOME
                                     </a>
                                 </div>
@@ -62,28 +62,28 @@ class Header extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to='/aboutus'><div className = "container topBotomBordersOut">
-                                    <a id = "skill">
+                                    <a href = "#1" id = "skill">
                                         SKILLS
                                     </a>
                                 </div></NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link"  to='/menu'><div className = "container topBotomBordersOut">
-                                    <a id = "project">
+                                    <a  href = "#1" id = "project">
                                         PROJECTS
                                     </a>
                                 </div></NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to='/contactus'><div className = "container topBotomBordersOut">
-                                    <a id = "contact">
+                                    <a href = "#1" id = "contact">
                                         CONTACT
                                     </a>
                                 </div></NavLink>
                             </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
-                            <NavbarBrand className=" logo-J mr-auto" href="/"><a><img src={jletter} width = "30" alt="React Logo" className = "logo"/></a></NavbarBrand>
+                            <NavbarBrand className=" logo-J mr-auto" href="/"><a href = "#1"><img src={jletter} width = "30" alt="React Logo" className = "logo"/></a></NavbarBrand>
                             </Nav>
                         </Collapse>
                     </div>

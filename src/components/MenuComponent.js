@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
@@ -40,7 +40,7 @@ function Menu(props) {
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <Button onMouseEnter={play} onMouseLeave={stop}>
-                  <img className="color-img" src={color}></img>
+                  <img alt = "color switch " className="color-img" src={color}></img>
                   <p className="color-switch">Color Switch</p>
                 </Button>
               </div>
@@ -59,7 +59,7 @@ function Menu(props) {
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <Button onMouseEnter={play} onMouseLeave={stop}>
-                  <img className="blm-img" src={blm}></img>
+                  <img alt = "black life matter" className="blm-img" src={blm}></img>
                   <p className="blm-switch">George Floyd Web Typography</p>
                 </Button>
               </div>
@@ -86,7 +86,7 @@ function Menu(props) {
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <Button onMouseEnter={play} onMouseLeave={stop}>
-                  <img className="su-img" src={su}></img>
+                  <img alt = "sudoku" className="su-img" src={su}></img>
                   <p className="su-switch">Automatic sudoku solver</p>
                 </Button>
               </div>

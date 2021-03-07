@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Menu from './MenuComponent';
 import Home from './HomeComponent';
 // import Footer from './FooterComponent';
-import DishDetail from './DishDetailComponent';
+// import DishDetail from './DishDetailComponent';
 import Header from './HeaderComponent';
 import About from './AboutComponent';
 // import { DISHES } from '../shared/dishes';
@@ -45,21 +45,21 @@ class Main extends Component {
       return null; //app is not ready (fake request is in process)
     }
     document.body.style.background = "#1d1d1d";
-    const DishWithId = ({match}) => {
-        return(
-            <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId, 10))[0]} 
-                comments = {this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
-            />
+    // const DishWithId = ({match}) => {
+    //     return(
+    //         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId, 10))[0]} 
+    //             comments = {this.state.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
+    //         />
 
-        );
-    }
+    //     );
+    // }
     return (
       <div>
       <Header />
       <Switch>
           <Route path = "/home" component = {() => <Home />} />
           <Route exact path = "/menu" component = {() => <Menu />} /> 
-          <Route path = "/menu/:dishId" component = {DishWithId} />
+          {/* <Route path = "/menu/:dishId" component = {DishWithId} /> */}
           <Route exact path = "/contactus" component = {Contact} />
           <Route exact path = "/aboutus" component = {() => <About leaders = {this.state.leaders} />} />
           <Redirect to = "/home" />

@@ -139,7 +139,7 @@ body {
 
 .project-heading {
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #febe55;
   font-size: 200%;
   margin-top: 3vh;
   margin-bottom: 5vh;
@@ -183,7 +183,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 250%;
-  color: white;
+  color: #febe55;
   margin-top: 200px;
   vertical-align: middle;
 }
@@ -439,7 +439,7 @@ div.topBotomBordersOut a:hover:after {
   display: inline-block;
 }
 .swing:hover {
-  color: #febe55;
+  color: dodgerblue;
   -webkit-animation: swing 2s ease;
   animation: swing 1s both;
   -webkit-animation-iteration-count: 1;

@@ -82,8 +82,14 @@ class About extends Component {
               <br></br>
               <div class="button" id="button-3">
                 <div id="circle"></div>
-                <a className = "resume" href="https://docs.google.com/document/d/1WcXFwwUGgMWiHJ45fHJ2q954oDc4AQQX96n3YCgrQiE/edit?usp=sharing" rel="noreferrer"
-                      target="_blank">Resume</a>
+                <a
+                  className="resume"
+                  href="https://docs.google.com/document/d/1WcXFwwUGgMWiHJ45fHJ2q954oDc4AQQX96n3YCgrQiE/edit?usp=sharing"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Resume
+                </a>
               </div>
             </div>
             <div className="tagcloud col-12 col-md-6 tag"></div>
