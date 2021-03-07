@@ -37,26 +37,44 @@ class Header extends Component {
         return(
             <div>
                 <Navbar expand="lg">
-                    <div className="container">
+                    <div className = "container">
                         <NavbarToggler onClick={this.toggleNav} />
                         
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                             <NavItem>
-                                <NavLink className="nav-link"to='/home'><span className="fa nav fa-lg"></span> Home</NavLink>
+                                <NavLink className="nav-link topBotomBordersOut"to='/home'>
+                                <div className = "container topBotomBordersOut">
+                                    <a>
+                                        HOME
+                                    </a>
+                                </div>
+                                </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/aboutus'><span className="fa nav fa-lg"></span>Skills</NavLink>
+                                <NavLink className="nav-link" to='/aboutus'><div className = "container topBotomBordersOut">
+                                    <a>
+                                        SKILLS
+                                    </a>
+                                </div></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/menu'><span className="fa nav fa-lg"></span>Project</NavLink>
+                                <NavLink className="nav-link"  to='/menu'><div className = "container topBotomBordersOut">
+                                    <a>
+                                        PROJECTS
+                                    </a>
+                                </div></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/contactus'><span className="fa nav fa-lg"></span> Contact Me</NavLink>
+                                <NavLink className="nav-link" to='/contactus'><div className = "container topBotomBordersOut">
+                                    <a>
+                                        CONTACT
+                                    </a>
+                                </div></NavLink>
                             </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
-                            <NavbarBrand className="mr-auto" href="/"><a href="https://www.freepnglogos.com/images/j-letter-37766.html" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/j-letter-png/j-letter-svg-png-icon-download-onlinewebfontsm-20.png" width="30" height = "41" alt="Joykirat Singh" className = "logo" /></a></NavbarBrand>
+                            <NavbarBrand className=" logo-J mr-auto" href="/"><a><img src="https://www.freepnglogos.com/uploads/j-letter-png/j-letter-svg-png-icon-download-onlinewebfontsm-20.png" width="30" height = "41" alt="Joykirat Singh" className = "logo" /></a></NavbarBrand>
                             </Nav>
                         </Collapse>
                     </div>
