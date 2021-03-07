@@ -4,6 +4,9 @@ import Typewriter from "typewriter-effect";
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { BsFillXDiamondFill } from "react-icons/bs";
+import insta from "../images/instagram-color.svg";
+// import git from "../images/link.sv";
+
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
@@ -91,7 +94,7 @@ class Home extends Component {
               </p>
             </div>
 
-            <div className=" icon col-12 text-center">
+            <div className="icon col-12 text-center">
               <Raise height={10} timing={200}>
                 <IconContext.Provider value={{ className: "github" }}>
                   <a
@@ -120,7 +123,7 @@ class Home extends Component {
                     style: {
                       margin: "10px",
                       fontSize: "40px",
-                      color: "rgb(245,133,41)",
+                      color: "#FD1D1D",
                     },
                   }}
                 >
@@ -150,7 +153,7 @@ class Home extends Component {
                     style: {
                       margin: "10px",
                       fontSize: "35px",
-                      color: "rgb(255,250,0)",
+                      color: "#FBBC05",
                     },
                   }}
                 >
@@ -228,7 +231,7 @@ class Home extends Component {
                     style: {
                       margin: "10px",
                       fontSize: "40px",
-                      color: "rgb(59,89,152)",
+                      color: "#4267B2",
                     },
                   }}
                 >

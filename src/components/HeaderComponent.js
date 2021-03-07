@@ -1,7 +1,7 @@
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, ModalHeader,Modal, Button, ModalBody, Form, FormGroup, Label, Input} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import React, {Component} from 'react';
-
+import jletter from "../images/j-letter.svg";
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -74,7 +74,7 @@ class Header extends Component {
                             </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
-                            <NavbarBrand className=" logo-J mr-auto" href="/"><a><img src="https://www.freepnglogos.com/uploads/j-letter-png/j-letter-svg-png-icon-download-onlinewebfontsm-20.png" width="30" height = "41" alt="Joykirat Singh" className = "logo" /></a></NavbarBrand>
+                            <NavbarBrand className=" logo-J mr-auto" href="/"><a><img src={jletter} width = "30" alt="React Logo" className = "logo"/></a></NavbarBrand>
                             </Nav>
                         </Collapse>
                     </div>
