@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import useSound from "use-sound";
 import tap from "../sound/air.wav";
 function Menu(props) {
-  const [play, { stop }] = useSound(tap, { volume: 0.2 });
+  const [play, { stop }] = useSound(tap, { volume: 0.05});
   const styles = {
     fadeInDown: {
       animation: "x 1.5s",
