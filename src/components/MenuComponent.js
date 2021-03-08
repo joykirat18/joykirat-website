@@ -36,7 +36,7 @@ function Menu(props) {
             </p>
           </div>
 
-          <div className="flip-card col-4 text-center">
+          <div className="flip-card col-12 col-md-4 text-center">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <Button onMouseEnter={play} onMouseLeave={stop}>
@@ -55,7 +55,7 @@ function Menu(props) {
             </div>
           </div>
 
-          <div className="flip-card col-4 text-center">
+          <div className="flip-card col-12 col-md-4 text-center">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <Button onMouseEnter={play} onMouseLeave={stop}>
@@ -82,7 +82,7 @@ function Menu(props) {
               </div>
             </div>
           </div>
-          <div className="flip-card col-4 text-center">
+          <div className="flip-card col-12 col-md-4 text-center">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <Button onMouseEnter={play} onMouseLeave={stop}>

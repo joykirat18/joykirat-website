@@ -28,10 +28,6 @@ class Main extends Component {
     return new Promise(resolve => setTimeout(() => resolve(), 3000));
   };
 
-  onDishSelect(dishId) {
-    this.setState({ selectedDish: dishId});
-  }
-
   render() {
     if (this.state.loading) {
       return null; //app is not ready (fake request is in process)
