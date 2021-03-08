@@ -20,11 +20,11 @@ function Contact(props) {
             <p className="contact-heading">Have a Question for me?</p>
             <p className="contact-info">Contact Me</p>
             <div className="call-me-button">
-              <div class="phone cta">Call Me</div>
+              <div class="phone cta"><a style = {{color: "white"}} href = "href=tel:+919717522342">Call Me</a></div>
               <div class="phone number">9717522342</div>
             </div>
             <div className="email-me-button">
-              <div class="phone cta">Email Me</div>
+              <div class="phone cta"><a style = {{color: "white"}} href = "mailto:joykirat19166@iiitd.ac.in">Email Me</a></div>
               <div class="phone email">joykirat19166@iiitd.ac.in</div>
             </div>
             <div className="contact-info-2">
